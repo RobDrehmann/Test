@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Untitled</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
+
+        <!-- Header -->
+            <header id="header">
+                <a href="index.html" class="title">Robert Drehmann</a>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/projects" class="active">projects</a></li>
+                        <li><a href="/programs">programs</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+        <!-- Wrapper -->
+            <div id="wrapper">
+
+                <!-- Main -->
+
+                   <section id="one" class="wrapper style2 spotlights">
+                        <% for (let Messages of submits){%>
+                        <section id = "project">
+
+                            
+       
+                            <div  class="content">
+                                <div class="inner" >
+                                    <h2><%= Messages.name %></h2>
+                                    <p><%= Messages.message %></p>
+                                    <ul class="actions">
+                                        <li><a href="" class="button"><%= Messages.email %></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+        <% }%>
+                        
+
+            </div>
+
+        <!-- Footer -->
+            <footer id="footer" class="wrapper alt">
+                <div class="inner">
+                    <ul class="menu">
+                        <li>&copy; Untitled. All rights reserved.</li>
+                    </ul>
+                </div>
+            </footer>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
